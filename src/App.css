@@ -18,10 +18,9 @@ img {
 
 .banner{
   position: relative;
-  width: 100%;
-  height: 100%;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: white;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
@@ -71,4 +70,11 @@ span.ripple {
   transform: scale(0);
   animation: ripple 0.75s linear;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 40em){
+  img{
+    height: 100vh;
+    object-fit: cover;
+  }
 }

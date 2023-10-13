@@ -27,4 +27,41 @@
     color: rgba(255, 255, 255, 1);
 }
 
+.nav-bar svg{
+    color: white;
+}
 
+.nav-bar .menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 40em){
+    .nav-bar-btns{
+        position: fixed;
+        height: 100vh;
+        background-color: black;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 10% 10px;
+        min-width: 60%;
+
+        transition: all 1s ease;
+        transform: translate(100%, 0);
+        z-index: 100;
+    }
+
+    .nav-bar .nav-bar-btn{
+        width: 100%;
+        padding: 0 10%;
+        margin: 20px 0;
+    }
+
+    .nav-bar .menu-icon{
+        display: block;
+    }
+
+    .nav-bar-btns.opened{
+        transform: translate(0,0);
+    }
+}
